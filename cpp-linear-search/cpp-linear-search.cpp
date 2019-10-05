@@ -1,25 +1,28 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-void linearSearch(const int myList[], int key)
+typedef long long ll;
+bool linearSearch(vector<ll> myList, ll key)
 {
-	for (int i = 0; i < sizeof(myList); i++)
+	for (ll i = 0; i < myList.size(); i++)
 	{
 		if (key == myList[i])
-			cout << "Successful Search" << endl;
-	}	
+			return 1;
+	}
+	return 0;	
 }
 int main()
 {
-    int num;
+    ll num;
     cout << "Enter Number of Elements :"<< endl;
     cin >> num;
-	int myList[num];
-    for(int i = 0 ; i <  num  ;i++)
+	vector<ll> myList(num);
+    for(ll i = 0 ; i <  num  ;i++)
         cin >> myList[i];
+
     cout << "Enter Element to Search :"<< endl;
-	int key;
+	ll key;
     cin >> key;
-	linearSearch(myList, key);
+	cout<< "Element " << ( linearSearch(myList, key) ?  "Present" : "Absent" ) << endl;
 	return 0;
 }

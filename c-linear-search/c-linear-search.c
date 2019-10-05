@@ -13,12 +13,13 @@ int main()
     {
         if(a[i]==x)
             {
-                flag=1;        //If number is found then set the flag
+       		flag=1;		//If number is found then set the flag		
+		break;        
             }
     }    
     if(flag==1)
         printf("Yes\n");      //If number is found then print yes.
     else
         printf("No\n");       // If number is not there then print no.
-return 0;
+    return 0;
 }
