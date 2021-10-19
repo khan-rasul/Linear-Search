@@ -3,7 +3,7 @@ using namespace std;
 
 void linearSearch(const int myList[], int key)
 {
-	for (int i = 0; i < sizeof(myList); i++)
+	for (int i = 1; i < sizeof(myList); i++)
 	{
 		if (key == myList[i])
 			cout << "Successful Search" << endl;
