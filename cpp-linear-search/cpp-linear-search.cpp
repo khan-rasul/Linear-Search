@@ -15,8 +15,8 @@ int main()
     cout << "Enter Number of Elements :"<< endl;
     cin >> num;
 	int myList[num];
-    for(int i = 0 ; i <  num  ;i++)
-        cin >> myList[i];
+    for(int j = 0 ; j <  num  ;j++)
+        cin >> myList[j];
     cout << "Enter Element to Search :"<< endl;
 	int key;
     cin >> key;
